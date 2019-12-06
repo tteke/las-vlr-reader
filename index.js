@@ -59,7 +59,7 @@
 
                 data = geoKeyDirectory;
             } else {
-                data = readAsString(arraybuffer, currentOffset,  recordLength); 
+                data = readAsString(arraybuffer, currentOffset,  recordLength + 1); 
                 currentOffset += recordLength;
             }
 
