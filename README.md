@@ -8,7 +8,7 @@ function onChange(event) {
 
     reader.onload = (e) => {
         const arraybuffer = e.target.result;
-        const vlrEntries = window.readLASVLR(arraybuffer);
+        const vlrEntries = window.readLASVLR(new Uint8Array(arraybuffer));
 
         console.log(vlrEntries);
     }; 
@@ -22,9 +22,9 @@ const { readLASVLR } = require(/path/to/repo/index.js');
 
 const filePath = '/path/to/las/file.las';
 
-const arraybuffer = fs.readFileSync(filePath);
+const buffer = fs.readFileSync(filePath);
 
-const vlrEntries = readLASVLR(arraybuffer);
+const vlrEntries = readLASVLR(buffer);
 
 console.log(vlrEntries);
 ```
