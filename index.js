@@ -3,8 +3,7 @@
         const signature = readAsString(arraybuffer, 0, 4);
 
         if (signature !== 'LASF') {
-            console.error('not a proper las file');
-            process.exit(1);
+            throw new Error('not a proper las file');
         }
 
         // using spec https://www.asprs.org/wp-content/uploads/2010/12/LAS_1_4_r13.pdf
