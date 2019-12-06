@@ -1,0 +1,22 @@
+{
+  "name": "las-vlr-reader",
+  "version": "1.0.0",
+  "description": "read VLR entries from a las file (arraybuffer)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tteke/las-vlr-reader.git"
+  },
+  "keywords": [
+    "LAS"
+  ],
+  "author": "Turker Teke <trkrtk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tteke/las-vlr-reader/issues"
+  },
+  "homepage": "https://github.com/tteke/las-vlr-reader#readme"
+}
